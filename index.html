@@ -1,11 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./resume_averichev.pdf">
-  <title>Резюме</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | CV</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+        }
+
+        header {
+            padding: 12px 20px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        header a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            min-height: 0;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-  <p>Если резюме не открылось, <a href="./resume_averichev.pdf">нажмите сюда</a>.</p>
+    <header>
+        <strong>Resume / CV</strong>
+        <div>
+            <a href="./resume.pdf" target="_blank">
+                Open PDF
+            </a>
+            <a href="./resume.pdf" download>
+                Download
+            </a>
+        </div>
+    </header>
+
+    <iframe src="./resume.pdf" title="Resume">
+        <a href="./resume.pdf">Open resume</a>
+    </iframe>
 </body>
 </html>
+
